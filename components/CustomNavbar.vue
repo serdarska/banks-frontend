@@ -1,6 +1,6 @@
 <template>
 <section>
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
        <div class="align-items-start">
        <img src="../assets/images/logo.svg" alt="Logo" class="navbar-brand ms-5"
             width="150"
