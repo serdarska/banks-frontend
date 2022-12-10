@@ -1,5 +1,8 @@
 <template>
-
+<div>
+  <custom-navbar/>
+  <banks-component/>
+</div>
 </template>
 
 <script>

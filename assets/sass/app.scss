@@ -1,11 +1,4 @@
 $fa-font-path: "~font-awesome/fonts";
 @import "~bootstrap/scss/bootstrap";
 @import "~font-awesome/scss/font-awesome";
-
-.ratio-695x742 {
-  --bs-aspect-ratio: calc(742 / 695 * 100%);
-}
-
-.ratio-974x514{
-  --bs-aspect-ratio: calc(514 / 974 * 100%);
-}
+@import "custom";
