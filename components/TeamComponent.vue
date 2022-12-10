@@ -18,9 +18,9 @@
         location. <br/>
       </p>
     </div>
-    <div class="col-7 end-0 bottom-0">
-      <img src="../assets/images/team.svg" alt="Team" class="ps-0 ms-0 align-items-end position-absolute bottom-0 end-0 " height="650" width="514">
-    </div>
+<!--    <div class="col-7 end-0 bottom-0">-->
+<!--      <img src="../assets/images/team.svg" alt="Team" class="ps-0 ms-0 align-items-end position-absolute bottom-0 end-0 " height="650" width="514">-->
+<!--    </div>-->
   </div>
 </template>
 

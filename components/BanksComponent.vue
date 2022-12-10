@@ -12,10 +12,9 @@
           <p class="px-5 py-1 fs-2 text-black-50 pt-2">Enter a city</p>
         </div>
         <div class="bg-secondary rounded-4 text-black-50 text-center py-4 mt-4">
-          <p class="bg-light mx-2 my-4 fs-3 rounded-4">Halk Bank, Skopje</p>
-          <p class="bg-light mx-2 my-4 fs-3 rounded-4">Nlb Bank, Bitola</p>
-          <p class="bg-light mx-2 my-4 fs-3 rounded-4">Procredit Bank, Skopje</p>
-          <p class="bg-light mx-2 my-4  fs-3 rounded-4">TTK Bank, Skopje</p>
+          <ul>
+            <li v-for="item in menu">{{ item.name }}, {{ item.address }} , {{ item.city }}</li>
+          </ul>
 
         </div>
       </div>
@@ -24,8 +23,12 @@
 </template>
 
 <script>
+
+import {mapState} from 'vuex'
+
 export default {
-  name: "BanksComponent"
+  name: "BanksComponent",
+  computed: mapState(['menu'])
 }
 </script>
 
