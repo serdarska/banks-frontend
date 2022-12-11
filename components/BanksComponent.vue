@@ -24,11 +24,11 @@
 
 <script>
 
-// import {mapState} from 'vuex'
+import {mapState} from 'vuex'
 
 export default {
   name: "BanksComponent",
-  // computed: mapState(['banks'])
+   computed: mapState(['banks'])
 }
 </script>
 
