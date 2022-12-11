@@ -3,7 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  SET_MENU(state, banks){
+  SET_BANKS(state, banks){
     state.banks = banks
   }
 }
