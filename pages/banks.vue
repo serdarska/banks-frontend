@@ -1,7 +1,7 @@
 <template>
 <div>
-  <custom-navbar/>
-  <banks-component/>
+  <custom-navbar class="z-index-0" />
+  <banks-component class="z-index-1"/>
 </div>
 </template>
 
@@ -13,4 +13,11 @@ name: "banks"
 
 <style scoped>
 
+.z-index-0 {
+  z-index: 0;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
 </style>

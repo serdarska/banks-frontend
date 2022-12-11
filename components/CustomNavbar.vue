@@ -14,7 +14,7 @@
       </button>
       <div class="collapse navbar-collapse me-5 pe-5 justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li v-for="option in options" class="nav-item mx-5 mt-2 px-5 py-0 btn btn-secondary rounded-5">
+          <li v-for="option in options" class="nav-item mx-5 mt-2 px-5 py-0 btn background rounded-5">
             <a class="nav-link active text-black-50 text-uppercase" aria-current="page" :href="option.link">{{option.name}}</a>
           </li>
         </ul>
