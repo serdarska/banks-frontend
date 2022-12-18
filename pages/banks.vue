@@ -1,7 +1,7 @@
 <template>
   <div>
     <custom-navbar/>
-    <banks-component :banks="banks" @set-filters="load($event)"/>
+    <banks-component :banks="filteredBanks" @set-filters="filtersChanged($event)"/>
   </div>
 </template>
 
@@ -10,7 +10,8 @@ export default {
   name: "banks",
   data() {
     return {
-      banks: [],
+      allBanks: [],
+      filteredBanks: [],
       filters: {
         s: ''
       }
@@ -18,20 +19,30 @@ export default {
   },
 
   async mounted() {
-    await this.load(this.filters);
+    // await this.load(this.filters);
+    const response = await fetch('http://localhost:8080/api/banks/');
+    const content = await response.json();
+    this.allBanks = content.data;
+    this.filteredBanks = content.data;
+
   },
   methods: {
-    async load(f) {
+    filtersChanged(f) {
       this.filters.s = f.s;
-      const arr = [];
+      let banks = this.allBanks.filter(p => p.name.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0 ||
+        p.address.toLowerCase().indexOf(this.filters.s.toLowerCase()) >=0 || p.city.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0);
 
-      if (this.filters.s) {
-        arr.push('s=${this.filters.s}');
-      }
+      this.filteredBanks = banks;
+    //   const arr = [];
+    //
+    //   if (this.filters.s) {
+    //     arr.push(`s=${this.filters.s}`);
+    //   }
 
-      const response = await fetch('http://localhost:8080/api/banks/');
-      const content = await response.json();
-      this.banks = content.data;
+      // const response = await fetch('http://localhost:8080/api/banks/');
+      // const content = await response.json();
+      // this.allBanks = content.data;
+      // this.filteredBanks = content.data;
 
     }
   }
