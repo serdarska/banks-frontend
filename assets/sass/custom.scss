@@ -9,3 +9,7 @@
 .background {
  background: rgb(176,176,176);
 }
+
+.ratio-1066x938{
+  --bs-aspect-ratio: calc(1066 / 938 * 100%);
+}
