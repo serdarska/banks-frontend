@@ -1,6 +1,5 @@
 <template>
   <div>
-    <custom-navbar/>
     <hero-section/>
   </div>
 </template>

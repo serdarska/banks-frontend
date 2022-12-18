@@ -1,6 +1,5 @@
 <template>
   <div>
-    <custom-navbar/>
     <banks-component :banks="filteredBanks" @set-filters="filtersChanged($event)"/>
   </div>
 </template>
@@ -29,10 +28,8 @@ export default {
   methods: {
     filtersChanged(f) {
       this.filters.s = f.s;
-      let banks = this.allBanks.filter(p => p.name.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0 ||
-        p.address.toLowerCase().indexOf(this.filters.s.toLowerCase()) >=0 || p.city.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0);
-
-      this.filteredBanks = banks;
+      this.filteredBanks = this.allBanks.filter(p => p.name.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0 ||
+        p.address.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0 || p.city.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0);
     //   const arr = [];
     //
     //   if (this.filters.s) {

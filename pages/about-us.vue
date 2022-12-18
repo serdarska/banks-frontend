@@ -1,6 +1,5 @@
 <template>
   <div>
-    <custom-navbar/>
     <team-component/>
   </div>
 </template>

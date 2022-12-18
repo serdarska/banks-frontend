@@ -11,14 +11,12 @@
       </div>
       <div class="col-3 ms-5 ps-5 mx-5 px-5 mt-5 ">
         <template>
-          <div class="background rounded-4 d-flex mt-5">
-            <input class="form-control py-2 bg-light fs-3 rounded-4" id="searchbar" placeholder="Find your bank"
-                   @keyup="search($event.target.value)">
+          <div class="background rounded-4 d-flex mt-5 input-group">
+            <input class="form-control py-2 bg-light fs-3 rounded-4" placeholder="Find your bank" @keyup="search($event.target.value)">
           </div>
           <div class="background rounded-4 text-center py-4 mt-4">
             <ul class="scrollable text-decoration-none list-style-none p-0">
-              <li v-for="bank in banks" class="text-decoration-none fs-4 text-black-50">{{ bank.name }}, {{bank.address}} , {{ bank.city }}
-              </li>
+              <li v-for="bank in banks" :key="bank.id" class="text-decoration-none fs-4 text-black-50">{{ bank.name }}, {{bank.address}} , {{ bank.city }}</li>
             </ul>
           </div>
         </template>
