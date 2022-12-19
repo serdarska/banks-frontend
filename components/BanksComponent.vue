@@ -27,11 +27,9 @@
 
 <script>
 
-// import {mapState} from 'vuex'
 
 export default {
   name: "BanksComponent",
-  // computed: mapState(['banks'])
   props: ['banks'],
   methods: {
     search(s) {
