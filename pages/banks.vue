@@ -18,6 +18,7 @@ export default {
   },
 
   async mounted() {
+    // await this.load(this.filters);
     this.$axios.$get('http://localhost:8080/api/banks/').then(
       response => {
         this.filteredBanks = response;
@@ -28,7 +29,7 @@ export default {
     filtersChanged(f) {
       this.filters.s = f.s;
       let filteredBanks1 = this.allBanks.filter(bank => bank.name.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0 ||
-        bank.city.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0);
+        bank.city.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0 || bank.address.toLowerCase().indexOf(this.filters.s.toLowerCase()) >= 0);
       this.filteredBanks = filteredBanks1;
     }
   }
