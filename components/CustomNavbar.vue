@@ -50,5 +50,8 @@ export default {
 </script>
 
 <style scoped>
-
+.background
+{
+  background: #C9C9C9;
+}
 </style>

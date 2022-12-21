@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-light">
+  <section class="bg-light height: 100px">
     <div class="row  mx-0 px-0">
       <div class="col-8 p-0">
         <div class="position-absolute  d-none d-xl-block d-none d-lg-block">
@@ -10,7 +10,7 @@
           on the go!
         </div>
       </div>
-      <div class="col-4 align-items-end p-0">
+      <div class="col-4 align-items-end p-0 ">
         <div class="position-absolute start-48  d-none d-lg-block">
           <img src="../assets/images/green-triangle.svg" alt="Green Triangle" height="700">
         </div>
@@ -44,4 +44,5 @@ export default {
 .top-15 {
   top: 15%;
 }
+
 </style>

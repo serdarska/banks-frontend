@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-light">
+  <section class="bg-lightnpm">
     <div class="row">
-      <div class="col-12 col-sm-8 justify-content-center ps-sm-5 ms-sm-5 mt-sm-5 me-sm-3 col-lg-4 ms-lg-5 ps-lg-5 mt-lg-5 pt-lg-5">
+      <div class="col-12 col-sm-8 justify-content-center ps-sm-5 ms-sm-5 mt-sm-5 me-sm-3 col-lg-5 ms-lg-5 ps-lg-5 mt-lg-5 pt-lg-4">
         <p class="background text-center rounded-4 fs-3 text-black-50 me-4 px-2 py-3 start-10">
           Our goal is to help you find<br/>
           the bank you have been<br/>
@@ -12,6 +12,7 @@
           You can only find banks<br/>
           in North Macedonia.<br/>
         </p>
+
         <p class="background text-center rounded-4 fs-3 text-black-50 me-4 px-2 py-3">
           The main goal of this <br/>
           application is to display your<br/>
@@ -37,7 +38,10 @@ export default {
 .background-color-green {
   background: #3cb371;
 }
-
+.background
+{
+  background: #C9C9C9;
+}
 .top-20 {
   top: 20%;
 }
