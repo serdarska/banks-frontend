@@ -1,22 +1,16 @@
 <template>
   <section class="bg-light">
     <div class="row">
-      <div class="col-12 col-sm-8 justify-content-center ps-sm-5 ms-sm-5 mt-sm-5 me-sm-3 col-lg-4 ms-lg-5 ps-lg-5 mt-lg-5 pt-lg-5">
+      <div
+        class="col-12 col-sm-8 justify-content-center ps-sm-5 ms-sm-5 mt-sm-5 me-sm-3 col-lg-4 ms-lg-5 ps-lg-5 mt-lg-5 pt-lg-5">
         <p class="background text-center rounded-4 fs-3 text-black-50 me-4 px-2 py-3 start-10">
-          Our goal is to help you find<br/>
-          the bank you have been<br/>
-          looking for in an easier and<br/>
-          more efficient way. <br/>
+          {{ $t('desc1') }}
         </p>
         <p class="background-color-green ms-5 py-3 text-center rounded-4 fs-3 text-white px-2 py-2">
-          You can only find banks<br/>
-          in North Macedonia.<br/>
+          {{ $t('desc2') }}
         </p>
         <p class="background text-center rounded-4 fs-3 text-black-50 me-4 px-2 py-3">
-          The main goal of this <br/>
-          application is to display your<br/>
-          desired bank with it's<br/>
-          location. <br/>
+          {{ $t('desc3') }}
         </p>
       </div>
       <div class="col-8 p-0 d-none d-lg-block">
