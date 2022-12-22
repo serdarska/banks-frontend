@@ -64,59 +64,10 @@ export default {
         },
       ],
       langDir: 'lang/',
-      defaultLocale: 'mk'
+      defaultLocale: 'mk',
     }]
   ],
 
-  // i18n: {
-  //   locales: ['en', 'mk'],
-  //   defaultLocale: 'mk',
-  //   vueI18n: {
-  //     fallbackLocale: 'en',
-  //     messages: {
-  //       en: {
-  //         menu: {
-  //           option1: 'Home',
-  //           option2: 'Banks',
-  //           option3: 'About us'
-  //         },
-  //         description: 'Find your bank on the go!',
-  //         searchbar: 'Find your bank',
-  //         team:{
-  //           desc1: ' Our goal is to help you find<br/>\n' +
-  //             '          the bank you have been<br/>\n' +
-  //             '          looking for in an easier and<br/>\n' +
-  //             '          more efficient way. <br/>',
-  //           desc2: ' You can only find banks<br/>\n' +
-  //             '          in North Macedonia.<br/>',
-  //           desc3: 'The main goal of this <br/>\n' +
-  //             '          application is to display your<br/>\n' +
-  //             '          desired bank with it\'s<br/>\n' +
-  //             '          location. <br/>'
-  //         }
-  //       },
-  //       mk: {
-  //         menu: {
-  //           option1: 'Почетна',
-  //           option2: 'Банки',
-  //           option3: 'За Нас'
-  //         },
-  //         description: 'Најдете ја вашата банка во движење!',
-  //         searchbar: 'Најдете ја вашата банка',
-  //         team:{
-  //           desc1: 'Нашата цел е да ви помогнеме<br/>\n ' + '' +
-  //             '     на полесен и поефикасен начин<br>\n' +
-  //             '     да ја пронајдете банката што ја барате.<br>\n',
-  //           desc2: 'Банките можете да ги најдете <br/>\n' +
-  //             '     само во Северна Македонија.<br/>',
-  //           desc3: 'Главната цел на оваа апликација<br/>\n' +
-  //             '     е да ја прикаже саканата банка<br/>\n' +
-  //             '     со нејзината локација.<br/>\n'
-  //         }
-  //       }
-  //     }
-  //   }
-  // },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

@@ -3,7 +3,7 @@ export default {
     name: 'Почетна',
     link: '/'
   },
-    {gi
+    {
       name: 'Банки',
       link: '/banks'
     },

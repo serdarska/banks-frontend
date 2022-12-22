@@ -16,8 +16,12 @@
         <div class="collapse navbar-collapse me-3 pe-3 justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li v-for="option in $t('menu')" class="nav-item  mx-3 mx-xl-5 mt-2 px-lg-5 py-0 btn background rounded-5">
-              <a class="nav-link active text-black-50 text-uppercase" aria-current="page"
-                 :href="option.link">{{ $t(option.name) }}</a>
+              <nuxt-link v-if="$i18n.locale !== 'mk'" class="nav-link active text-black-50 text-uppercase"
+                         aria-current="page" :to="localePath(option.link)">{{ $t(option.name) }}
+              </nuxt-link>
+              <nuxt-link v-if="$i18n.locale !== 'en'" class="nav-link active text-black-50 text-uppercase"
+                         aria-current="page" :to="localePath(option.link)">{{ $t(option.name) }}
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -26,7 +30,7 @@
             <a class="nav-link dropdown-toggle text-black-50" href="#" id="navbarDropdown" role="button"
                data-bs-toggle="dropdown"
                aria-expanded="false">
-              {{$t('language')}}
+              {{ $t('language') }}
             </a>
             <div class="dropdown">
               <ul class="dropdown-menu background-gray p-0">

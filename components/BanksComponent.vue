@@ -9,7 +9,9 @@
       <div class="col-3  mx-5 mt-5 col-xxl">
         <template>
           <div class="background rounded-4 d-flex mt-5 input-group">
-            <input class="form-control py-2 bg-light fs-3 rounded-4" placeholder="Find your bank"
+            <input v-if="$i18n.locale == 'en'" class="form-control py-2 bg-light fs-3 rounded-4"  placeholder="Find your bank"
+                   @keyup="search($event.target.value)"/>
+            <input v-if="$i18n.locale == 'mk'" class="form-control py-2 bg-light fs-3 rounded-4"  placeholder="Најдете ја вашата банка"
                    @keyup="search($event.target.value)"/>
           </div>
           <div class="background rounded-4 text-center py-4 mt-4 scrollable overflow-auto">
