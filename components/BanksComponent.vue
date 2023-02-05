@@ -18,7 +18,7 @@
             <ul class=" text-decoration-none list-style-none p-0">
               <div>
                 <li v-for="bank in banks" :key="bank.id"
-                    class="bg-light px-4 mx-4 my-4 ml-4 rounded-4 text-decoration-none font-weight-light fs-4 text-black-50 border border-bottom ">
+                    class="bg-light px-4 mx-4 my-4 ml-4 rounded-4 text-decoration-none font-weight-light fs-4 text-black-50 border border-bottom">
                   {{ bank.name }}, {{ bank.address }} , {{ bank.city }}
                 </li>
               </div>
