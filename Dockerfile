@@ -14,7 +14,7 @@ RUN npm ci
 COPY . .
 
 # Build the Nuxt.js app
-RUN npm run dev
+RUN npm run build
 
 # Expose the app's default port
 EXPOSE 3000
