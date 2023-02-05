@@ -1,23 +1,21 @@
-# Use a Node.js base image
-FROM node:14
+# Use a node.js image as base
+FROM node:16
 
-# Set the working directory in the container
+# Copy the necessary files for the frontend to the image
+COPY . /app
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the container
-COPY package*.json ./
-
 # Install dependencies
-RUN npm ci
+RUN npm install
 
-# Copy all files to the container
-COPY . .
+# Set environment variables for the frontend
+ENV API_URL=http://localhost:8080
 
-# Build the Nuxt.js app
+# Build the frontend
 RUN npm run build
 
-# Expose the app's default port
+# Expose port 3000 for the frontend
 EXPOSE 3000
 
-# Specify the command to run the app
-CMD [ "npm", "start" ]
+# Run the frontend when a container is started from the image
+CMD ["npm", "start"]
