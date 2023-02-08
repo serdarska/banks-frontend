@@ -1,5 +1,5 @@
 # Use a node.js image as base
-FROM node:16
+FROM node:14
 
 # Copy the necessary files for the frontend to the image
 COPY . /app
